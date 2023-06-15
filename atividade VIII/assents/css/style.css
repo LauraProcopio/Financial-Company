@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        font-family: 'poppins';
+        font-size: 13px;
+        overflow-x: hidden;
+    }
+
+    header{
+        height: 100px;
+        background-color: #568bcf;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .header {
+        max-width: 100%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        width: 400px;
+        font-size: 17px;
+    }
+
+    .logoimg{
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu ul,
+    .menu li {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        padding-left: 10px;
+        height: 100px;
+        padding-right: 10px;
+        align-items: center;
+        border-bottom: 5px solid transparent;
+    }
+
+    .mmenu li a:hover{
+        border-bottom: 5px solid #32537e;
+    }
+
+    .menu .active a {
+        border-bottom: 5px solid #32537e;
+        color: #ccc;
+    }
+
+    .banner {
+        height: calc(100vh - 100px);
+        background-color: #333;
+        background-image: url('https://capitalresearch.com.br/wp-content/uploads/2019/09/shutterstock_1388100275.jpg');
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+    }
+
+    .banner .sliders {
+        width: 1000vw;
+        height: 100%;
+    }
+
+    .banner .slide {
+        width: 100vw;
+        height: 100%;
+        display: inline-block;
+        background-color: rgba(0,0,0, 0.8);
+    }
+
+    .banner .slidearea {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        flex-direction: column;
+        text-align: center;
+    } 
+
+    .banner h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .banner h1 span {
+        color: #568bcf;
+    }
+
+    .banner h4 {
+        margin-top: 20px;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .button {
+        display: inline-block;
+        border: 2px solid #568bcf;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-weight: 600px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+
+    .default.light{
+        background-color: #568bcf;
+    }
+
+    .default {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .default .section-title,
+    .default .section-desc  {
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .default .section-title{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .default .section-desc {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .button-solict {
+        display: inline-block;
+        border: 2px solid #fff;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-decoration: none;
+        padding: 10px 30px;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    .Services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+    }
+
+    .nossoservicos {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nossoservicos h2 {
+        margin: 0;
+    }
+
+    .nossoservicos span {
+        color: #568bcf;
+    }
+
+    .service-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    .service-item{
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .service-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .service-item .infor {
+        background-color: #f7f7f7;
+        padding: 30px;
+        height: 100%;
+    }
+
+    .service-item .infor h4 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+        margin-bottom: 15px;
+    }
+
+    .service-item .infor p {
+        margin-bottom: 20px;
+    }
+
+    .service-item .filled-button {
+        text-decoration: none;
+        background-color: #568bcf;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .solucoes {
+        height: 500px;
+        background-image: url('https://img.freepik.com/fotos-gratis/trabalhando-com-graficos-homem-trabalhando-no-escritorio-ficando-ate-tarde-da-noite_155003-40818.jpg?w=740&t=st=1686341206~exp=1686341806~hmac=57aed91defbcf251cfb9056e1d93947102c38f04789a10cab43c3fb5685b36b8');
+        background-position: center;
+        overflow: hidden;
+        color: #fff;
+        display: flex;
+        justify-content: center;  /********não sei pq continua duplicando a imagem*********/
+        align-items: center;
+    }
+    
+    .content {
+        text-align: left;
+    }
+    
+    .esquerda {
+        text-align: left;
+        margin-left: 40px;
+    }
+    
+    .direita-info {
+        float: right;
+    }
+    
+    .informacoes-trab-cima,
+    .informacoes-trab-baixo {
+        text-align: center;
+        background-color: rgba(250 ,250, 250, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .numero {
+        margin: 5px 0px;
+        color: #568bcf;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    
+    .titulo-nub {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.5px;
+    }
+
+    .about {
+        margin-top: 40px;
+        background-color: #f7f7f7;
+        margin-right:20px;
+         margin-left: 20px;
+      }
+      
+      .contenn {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .left-img {
+        width: 50%;
+      }
+      
+      .left-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+      
+      .right-text {
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      .right-text h5 {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #666;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .right-text h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 35px;
+      }
+      
+      .right-text h2 span {
+        color: #568bcf;
+      }
+      
+      .right-text p {
+        margin-bottom: 30px;
+      }
+      
+      .filled-button {
+          display: inline-block;
+           border: 2px solid #568bcf;
+          text-transform: uppercase;
+          font-size: 13px;
+          text-decoration: none;
+          padding: 10px 30px;
+         color:black;
+          border-radius: 20px;
+      }
+
+      .oquedizem{
+        background-color: #f7f7f7;
+        
+      }
+      
+      
+      .dizem{
+        margin-top: 40px;
+            text-align: center;
+      }
+      
+      .dizem span{
+         color: #568bcf;
+      }
+      
+      .depoimentos-item {
+        flex: 0 0 calc(50% - 25px);
+        text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      
+      .depo-1,
+      .depo-2 {
+        margin-bottom: 20px;
+      }
+      
+      .depo-1 h4,
+      .depo-2 h4 {
+        font-size: 19px;
+        font-weight: 700;
+        color: #1e1e1e;
+        letter-spacing: 0.5px;
+        margin-bottom: 0px;
+      }
+      
+      .depo-1 h5,
+      .depo-2 h5 {
+        margin-top: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #568bcf;
+      }
+      
+      
+      .depo-1 p,
+      .depo-2 p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 25px;
+      }
+      
+      .depoimentos-item img {
+        max-width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-top: 20px;
+        object-fit: cover;
+      }
+
+      
+  .cont-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cont-form span {
+    color: #568bcf;
+  }
+
+  .contact {
+    background-color: #568bcf;
+    padding: 60px;
+    
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: #6a6a6a;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 35px;
+  }
+
+  .contact input:focus,
+  .contact textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  .border-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: #232323;
+    padding: 80px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    
+  }
+  
+  footer > div {
+    flex-basis: calc(33.33% - 40px);
+    margin-bottom: 40px;
+  }
+  
+  footer h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    margin-bottom: 35px;
+    margin: 20px;
+  }
+  
+  footer p {
+    color: #fff;
+    margin: 20px;
+  }
+  
+  footer .rede-social {
+    margin-top: 25px;
+  }
+  
+
+/***tentei colocar as logos do facebock e outras redes***/
+
+  .rede-social li {                                  
+    display: inline-block;
+    margin-right: 5px;
+     margin-left: 20px;
+  }
+  
+  .rede-social li:last-child {
+    margin-right: 0px;
+  }
+  
+  .rede-social li a {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    line-height: 34px;
+    text-align: center;
+    background-color: #fff;
+    color: #232323;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .rede-social li a:hover {
+    background-color: #568bcf;
+  }
+  
+  .sections {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sections li {
+    margin-bottom: 13px;
+  }
+  
+  .sections li:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .sections li a {
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .sections li a:hover {
+    color: #568bcf;
+  }
+  
+  .video embed {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .roda {
+        display: flex;
+        justify-content: center;
+    text-align: center;
+    background:#343434;
+    color:#fff;
+      }
+  .fim a{
+    text-decoration:none;
+    color:#fff;
+  }
+  
+      .fim {
+        margin: 0;
+      }
